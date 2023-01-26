@@ -1,0 +1,19 @@
+/*
+  This style.css is being used for things not posssible just within the style tag in the html head. 
+  I previously planned on used @font-face, but the console.log kept saying "@" was not identifiable, so that is something I have to research for the future.
+  */
+.videoClass{
+  position: relative;
+  border-width:20px;
+  border-style:double;
+  border-color:#5e7a82;
+  border-radius:20px;
+}
+.videoClass iframe{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  bottom:0px;
+  width: 100%;
+  height: 100%;
+}

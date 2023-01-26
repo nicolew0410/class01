@@ -1,0 +1,73 @@
+<html>
+<head>
+	<style> 
+	/*
+		Style holds all classes and ids, identifying all CSS in the .html file. Here, it shows multiple classes that are later called and used in multiple different types of tags. 
+	*/
+	    .paraStyle{
+			font-family:Copperplate;
+			color:white;
+			font-size:85px;
+			padding:10px;
+			line-height:85px;
+			text-align:center;
+			border-style:double;
+			border-width:18px;
+			background:#b8d1d1;
+			border-color:#739191;
+			border-radius:20px; 
+		} 
+		.bodyStyle1{
+			background:#647ea1;
+			border-style:double;
+			border-width:12px;
+			border-radius:20px;
+			border-color:lightsteelblue;
+		}
+		.bodyStyle2{
+			background:#c5c1d6;
+			border-style:double;
+			border-width:12px;
+			border-radius:20px;
+			border-color:#8179a3;
+		}
+		img {
+			display: block;
+			margin: auto;
+			border-color:#c5c1d6;
+			border-style:inset;
+			border-radius:20px;
+			border-width:12px;
+		}
+		/*
+			The "img" identification is NOT a class. Instead, it generalizes the assignment of the border, margin, and display to all images that will be used. That is the reason why it is also highlighted red.
+		*/
+		.hoverAnim:hover{
+			box-shadow: 0 12px 16px 0 rgba(115, 145, 145, 0.781),0 17px 50px 0 rgba(55, 92, 92, 0.884);
+		}
+		/*
+			This class does a hover animation over the h1 class, highlighting that it is the title of the website. It also is assigned 2 different colors, one lighter and another darker to show the gradient of the green color. 
+		*/
+		
+	</style>
+</head>
+<body>
+	<script src="style.css"></script> <!-- This "script" line refers to another file in the same folder this html file is in. The "style.css" file is used in addition to the "style" tag. I personally used it to decorate the iframe used later on. -->
+	<h1 class="paraStyle hoverAnim" > Media Installation Inspirations </h1> <!-- putting the class before the tag ending > helps identify the stylization of h1 -->
+	<br> <!-- I found br tags on W3Schools which help seperate and take a break between elements-->
+	<div class = "bodyStyle1">
+		<p style="color:lightsteelblue; text-align:center; font-size:50px; font-family:Optima;" >TeamLab Borderless</p> <!-- An example of inline stylization with p tags-->
+		<div class = "videoClass">
+			<p align="center"><iframe width='540' height='380' src="https://www.youtube.com/embed/tNvLFNHQ9Fg" frameborder="0" allowfullscreen></iframe></p>
+			<!-- The div class is what seperates these elements from the rest, acting as a container for the p tag and the iframe. The p tag turns the iframe into a text element, making it easier to center. The iframe is a usage of linking to videos with this specifically referring to Youtube.-->
+		</div>
+	</div>
+	<br>
+	<div class = "bodyStyle2">
+		<p style="color:#8179a3; text-align:center; font-size:50px; font-family:Optima; " >Artechouse</p>
+		<img class="imgStyle" src = "artechouse.jpeg" width="620" height="390" /> 
+		<br>
+		<br>
+	</div>
+</body>
+</html>
